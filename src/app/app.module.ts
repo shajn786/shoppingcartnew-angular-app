@@ -10,8 +10,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 const myRoutes : Routes = [
+  {
+     path:"",component:AdminLoginComponent
+  },
   {
     path:"add",component:AddProductComponent
   },
@@ -30,7 +34,8 @@ const myRoutes : Routes = [
     AddProductComponent,
     ViewallProductsComponent,
     NavbarComponent,
-    SearchComponent
+    SearchComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,
