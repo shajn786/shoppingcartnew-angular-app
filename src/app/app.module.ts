@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { SearchComponent } from './search/search.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { UserLoginComponent } from './user-login/user-login.component';
+import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 const myRoutes : Routes = [
   {
@@ -24,6 +26,12 @@ const myRoutes : Routes = [
   },
   {
     path:"search",component:SearchComponent
+  },
+  {
+    path:"userlogin",component:UserLoginComponent
+  },
+  {
+    path:"register",component:UserRegistrationComponent
   }
 ]
 
@@ -35,7 +43,9 @@ const myRoutes : Routes = [
     ViewallProductsComponent,
     NavbarComponent,
     SearchComponent,
-    AdminLoginComponent
+    AdminLoginComponent,
+    UserLoginComponent,
+    UserRegistrationComponent
   ],
   imports: [
     BrowserModule,
