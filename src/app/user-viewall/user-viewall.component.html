@@ -1,0 +1,32 @@
+<app-usernavbar></app-usernavbar>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 text-center" >
+                   <h1>View All Products</h1>
+                </div>
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let j of data">
+                   
+                  
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{j.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{j.pname}}</h5>
+                          <p class="card-text">{{j.description}}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">{{j.price}}</li>
+                          <li class="list-group-item">{{j.category}}</li>
+                          <li class="list-group-item"></li>
+                        </ul>
+                       
+                      </div>
+                    
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
