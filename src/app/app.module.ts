@@ -13,6 +13,9 @@ import { SearchComponent } from './search/search.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
+import { UserViewallComponent } from './user-viewall/user-viewall.component';
+import { UserSearchComponent } from './user-search/user-search.component';
+import { UsernavbarComponent } from './usernavbar/usernavbar.component';
 
 const myRoutes : Routes = [
   {
@@ -32,6 +35,12 @@ const myRoutes : Routes = [
   },
   {
     path:"register",component:UserRegistrationComponent
+  },
+  {
+    path:"userviewall",component:UserViewallComponent
+  },
+  {
+    path:"usersearch",component:UserSearchComponent
   }
 ]
 
@@ -45,7 +54,10 @@ const myRoutes : Routes = [
     SearchComponent,
     AdminLoginComponent,
     UserLoginComponent,
-    UserRegistrationComponent
+    UserRegistrationComponent,
+    UserViewallComponent,
+    UserSearchComponent,
+    UsernavbarComponent
   ],
   imports: [
     BrowserModule,
